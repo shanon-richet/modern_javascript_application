@@ -1,11 +1,14 @@
-export var élève = [{
-    prénom: "Shanon",
-    nom: "Richet",
-    age: "22"
-}]
-
 export function toggleDark() {
-    console.log('function')
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
+export function openShoppingCart() {
+    const aside = document.querySelector('aside');    
+    if (aside.style.display === "none") {
+      aside.style.display = "block";
+    } else {
+      aside.style.display = "none";
+    }
+}
+
+

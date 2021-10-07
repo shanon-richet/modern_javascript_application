@@ -1,6 +1,12 @@
-import { élève, toggleDark } from "./functions";
+import { toggleDark, openShoppingCart } from "./functions";
+import  { createMenu, main} from "./menu";
+console.log(main)
 
-console.log(élève)
 
 const darkModeSwitch = document.querySelector('.switch');
 darkModeSwitch.addEventListener('click', toggleDark)
+
+const btnShopping = document.querySelector('.btn');
+btnShopping.addEventListener('click', openShoppingCart)
+
+createMenu();
